@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* nav {
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   gap: 20px;
+   box-shadow: 4px 4px 6px gray;
+   cursor: pointer;
+}
+nav .logo {
+    background-image:url(initial-letter-nr-logo-design-vector-template-creative-abstract-nr-letter-logo-design-2BN8R77.jpg) ;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+img {
+height: 100px;
+width: 100px;
+}
+nav .nav-items {
+    display: flex;
+align-items: center;
+gap: 40px;
+padding-right: 100px;
+}
+.items {
+    font-size: 1.5rem;
+    color: rgb(40, 39, 39);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+} */
+
+nav .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("photo-1531104985437-603d6490e6d4.avif");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 2.2rem;
+}
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: rgba(0, 0, 0, 0.894);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position:absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after {
+width: 100%;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate Y(-50%);
+    text-align: center;
+   
+}
+.container h1 {
+    font-size: 4rem;
+    margin-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(15, 15, 15);
+    cursor: pointer;
+}
+.container p {
+    margin: 20px 0;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27rem;
+    gap: 10px;
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px  solid #009688;
+    background: transparent;
+    columns: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span {
+width: 100%;
+}
+button:hover {
+    border: none;
+}
